@@ -1,7 +1,7 @@
 name: Who can respond to your brief?
 question: 'Seller Selection'
 question_advice: ''
-optional: false
+optional: true
 type: multiquestion
 depends:
   - "on": "lot"

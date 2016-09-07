@@ -3,8 +3,8 @@ question: 'Security clearance'
 question_advice: |
   
   Only request security clearance if access to classified material, environments or assets is required.
-  
-  If security clearance is required, specify the type here.
+
+  If security clearance is required, specify the level here.
   
 type: textbox_large
 optional: true

@@ -11,7 +11,7 @@ depends:
       - iaas
       - SCS
       - scs
-type: pricing
+type: pricing_aud
 question: 'Service price'
 fields:
   minimum_price: priceMin

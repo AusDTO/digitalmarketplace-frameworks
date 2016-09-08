@@ -266,6 +266,8 @@ QUESTION_TYPES = {
     'list': list_property,
     'boolean_list': boolean_list_property,
     'pricing': pricing_property,
+    'pricing_aud': pricing_property,
+    'pricing_gbp': pricing_property,
     'number': number_property,
     'multiquestion': multiquestion
 }

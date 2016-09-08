@@ -3,7 +3,7 @@ depends:
   - "on": lot
     being:
       - digital-specialists
-type: pricing
+type: pricing_aud
 fields:
   minimum_price: technicalArchitectPriceMin
   maximum_price: technicalArchitectPriceMax

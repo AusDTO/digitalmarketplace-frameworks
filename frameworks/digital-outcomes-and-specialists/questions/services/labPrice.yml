@@ -5,7 +5,7 @@ depends:
     being:
       - user-research-studios
 
-type: pricing
+type: pricing_aud
 fields:
   hours_for_price: labTimeMin
   minimum_price: labPriceMin

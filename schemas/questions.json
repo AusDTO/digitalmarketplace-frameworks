@@ -21,7 +21,7 @@
     },
     "fields": {
       "properties": {
-        "type": {"enum": ["pricing"]}
+        "type": {"enum": ["pricing", "pricing_aud", "pricing_gbp"]}
       }
     },
     "before_summary_value": {
@@ -37,7 +37,8 @@
     "type": {
       "enum": [
         "boolean", "text", "radios", "list", "boolean_list", "checkboxes", "service_id",
-        "pricing", "upload", "number", "textbox_large", "multiquestion", "email"
+        "pricing", "pricing_aud", "pricing_gbp", "upload", "number", "textbox_large",
+        "multiquestion", "email"
       ]
     },
     "question_advice": {

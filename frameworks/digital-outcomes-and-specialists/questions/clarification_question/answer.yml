@@ -18,5 +18,5 @@ max_length_in_words: 100
 validations:
   - name: answer_required
     message: You must enter an answer.
-  - name: under_100_words
+  - name: under_word_limit
     message: Your answer must be no more than 100 words.

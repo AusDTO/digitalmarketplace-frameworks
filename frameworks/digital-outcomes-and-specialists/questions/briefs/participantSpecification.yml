@@ -20,6 +20,6 @@ depends:
       - user-research-participants
 validations:
   -
-    name: under_200_words
+    name: under_word_limit
     message: 'Your answer must be no more than 200 words.'
 empty_message: Describe participants

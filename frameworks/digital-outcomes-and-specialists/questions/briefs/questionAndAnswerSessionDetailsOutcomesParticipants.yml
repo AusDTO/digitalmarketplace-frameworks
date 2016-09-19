@@ -34,6 +34,6 @@ validations:
     name: answer_required
     message: 'You need to answer this question.'
   -
-    name: under_100_words
+    name: under_word_limit
     message: 'Your question and answer session details must be no more than 100 words.'
 empty_message: Add details

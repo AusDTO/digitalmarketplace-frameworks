@@ -16,6 +16,6 @@ depends:
       - digital-professionals
 validations:
   -
-    name: under_50_words
+    name: under_word_limit
     message: 'Your answer must be no more than 50 words.'
 empty_message: Add security clearance

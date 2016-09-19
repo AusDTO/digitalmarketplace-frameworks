@@ -13,6 +13,7 @@ question_advice: |
 
 type: list
 number_of_items: 20
+max_length_in_words: 30
 depends:
   - "on": "lot"
     being:
@@ -22,7 +23,7 @@ validations:
     name: answer_required
     message: 'You need to answer this question.'
   -
-    name: under_30_words
+    name: under_word_limit
     message: 'Criteria must be no more than 30 words.'
   -
     name: max_items_limit

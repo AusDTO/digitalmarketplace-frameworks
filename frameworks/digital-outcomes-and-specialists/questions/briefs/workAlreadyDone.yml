@@ -10,6 +10,6 @@ depends:
       - digital-outcomes
 validations:
   -
-    name: under_100_words
+    name: under_word_limit
     message: 'Your answer must be no more than 100 words.'
 empty_message: Describe any work that has already been done

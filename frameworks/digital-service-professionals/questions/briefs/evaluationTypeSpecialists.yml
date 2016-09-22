@@ -1,6 +1,6 @@
 name: How will you verify the specialist is right for the role? 
 id: evaluationType
-question: ''
+question: Verification methods
 question_advice: |
   
   You must review the resumes of all specialists who reach assessment stage.

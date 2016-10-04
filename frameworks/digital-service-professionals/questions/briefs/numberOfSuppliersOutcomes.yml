@@ -7,7 +7,7 @@ question_advice: |
 type: number
 limits:
   integer_only: true
-  min_value: 3
+  min_value: 1
   max_value: 15
 
 depends:

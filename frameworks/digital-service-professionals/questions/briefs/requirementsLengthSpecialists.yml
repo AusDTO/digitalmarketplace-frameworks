@@ -5,10 +5,7 @@ type: radios
 options:
   - label: "1 week"
   - label: "2 weeks"
-depends:
-  - "on": "lot"
-    being:
-      - digital-professionals
+
 validations:
   -
     name: answer_required

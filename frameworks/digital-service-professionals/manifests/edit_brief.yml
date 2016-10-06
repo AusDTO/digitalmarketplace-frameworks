@@ -158,7 +158,7 @@
   editable: True
   step: 3
   questions:
-    - requirementsLengthSpecialists
+    - requirementsLengthSpecialistsOutcomes
 
 -
   name: Question and answer session details

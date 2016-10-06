@@ -10,7 +10,7 @@ depends:
   - "on": lot
     being:
       - digital-professionals
-      - digital-outcomes
+      - digital-outcome
 
 validations:
   -

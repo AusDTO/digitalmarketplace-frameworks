@@ -6,7 +6,7 @@ question_advice: |
   For example, on site at least 3 days a week for face-to-face team meetings.
 
 type: textbox_large
-max_length_in_words: 100
+max_length_in_words: 500
 depends:
   - "on": "lot"
     being:
@@ -18,5 +18,5 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_word_limit
-    message: 'Your answer must be no more than 100 words.'
+    message: 'Your answer must be no more than 500 words.'
 empty_message: Describe working arrangements

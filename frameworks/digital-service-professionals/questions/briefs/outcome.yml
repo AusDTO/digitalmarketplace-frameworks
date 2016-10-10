@@ -3,7 +3,7 @@ question: Problem to solve
 question_advice: For example, patients can’t access their medical records.
 
 type: textbox_large
-max_length_in_words: 200
+max_length_in_words: 500
 depends:
   - "on": "lot"
     being:
@@ -14,5 +14,5 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_word_limit
-    message: 'Your answer must be no more than 200 words.'
+    message: 'Your answer must be no more than 500 words.'
 empty_message: Describe problem

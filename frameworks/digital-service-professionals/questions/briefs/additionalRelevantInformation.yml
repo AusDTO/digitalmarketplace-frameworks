@@ -1,15 +1,16 @@
-name: Why is the work being done?
-question: Reason for the work
+name: Any additional relevant information?
+question: 'Additional relevant information'
 question_advice: |
-  Describe the organisation or policy goal the work supports. 
+  Provide any additional relevant information
 
-  Include any important dates, especially if the work needs to be done by a set date.
+optional: true
 type: textbox_large
 max_length_in_words: 500
 depends:
   - "on": "lot"
     being:
       - digital-outcome
+      - digital-professionals
 validations:
   -
     name: answer_required
@@ -17,4 +18,4 @@ validations:
   -
     name: under_word_limit
     message: 'Your answer must be no more than 500 words.'
-empty_message: Describe why the work is being done
+empty_message: Additional relevant information

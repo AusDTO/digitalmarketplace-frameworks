@@ -34,6 +34,7 @@
     - phase
     - existingTeamOutcomes
     - existingTeamSpecialists
+    - additionalRelevantInformation
     - researchRounds
     - participantsPerRound
     - researchDates

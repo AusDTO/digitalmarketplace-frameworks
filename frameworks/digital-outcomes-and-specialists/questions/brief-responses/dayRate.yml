@@ -1,6 +1,6 @@
 name: Day rate
 question: What’s the specialist’s day rate in $AUD?
-hint: Enter a number, not a range.
+hint: For example, $900 per day.
 
 type: pricing_aud
 fields:

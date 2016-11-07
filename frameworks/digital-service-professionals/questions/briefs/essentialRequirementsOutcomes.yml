@@ -11,7 +11,7 @@ question_advice: |
 
 list_item_name: 'essential requirement'
 number_of_items: 20
-max_length_in_words: 30
+max_length_in_words: 50
 type: list
 depends:
   - "on": "lot"
@@ -24,7 +24,7 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_word_limit
-    message: 'Criteria must be no more than 30 words.'
+    message: 'Criteria must be no more than 50 words.'
   -
     name: max_items_limit
     message: 'You must have 20 or fewer criteria.'

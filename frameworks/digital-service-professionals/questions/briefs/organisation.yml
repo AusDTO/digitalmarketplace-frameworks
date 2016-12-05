@@ -3,7 +3,7 @@ question: Department, agency or organisation
 question_advice: |
   Please write in full, including the state if necessary. 
 
-  For example, Digital Transformation Office instead of DTO.
+  For example, Digital Transformation Agency instead of DTA.
 
 hint: 100 characters maximum
 type: text

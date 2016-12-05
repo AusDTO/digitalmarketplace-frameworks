@@ -1,7 +1,7 @@
 name: What phase is the work in?
 question: Current phase
 question_advice: |
-  Read more about the [service design and delivery process](https://www.dto.gov.au/standard/service-design-and-delivery-process/).
+  Read more about the [service design and delivery process](https://www.dta.gov.au/standard/service-design-and-delivery-process/).
 type: radios
 options:
   -

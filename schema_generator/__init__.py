@@ -27,6 +27,12 @@ SCHEMAS = {
 
         ('Digital Outcomes Service',
          'digital-service-professionals', 'digital-outcome'),
+
+        ('Digital Professionals Service',
+         'digital-marketplace', 'digital-professionals'),
+
+        ('Digital Outcomes Service',
+         'digital-marketplace', 'digital-outcome'),
     ],
     'briefs': [
         ('Digital Service Professionals Brief',
@@ -34,6 +40,12 @@ SCHEMAS = {
 
         ('Digital Outcome Brief',
          'digital-service-professionals', 'digital-outcome'),
+
+        ('Digital Service Professionals Brief',
+         'digital-marketplace', 'digital-professionals'),
+
+        ('Digital Outcome Brief',
+         'digital-marketplace', 'digital-outcome'),
     ],
     'brief-responses': [
         ('Digital Service Professionals Brief Response',
@@ -41,6 +53,12 @@ SCHEMAS = {
 
         ('Digital Outcome Brief Response',
          'digital-service-professionals', 'digital-outcome'),
+
+        ('Digital Service Professionals Brief Response',
+         'digital-marketplace', 'digital-professionals'),
+
+        ('Digital Outcome Brief Response',
+         'digital-marketplace', 'digital-outcome'),
     ]
 }
 

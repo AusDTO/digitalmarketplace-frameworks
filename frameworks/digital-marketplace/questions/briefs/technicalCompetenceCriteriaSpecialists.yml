@@ -1,0 +1,27 @@
+name: Evaluation criteria
+question: ''
+question_advice: |
+  When a seller applies for your brief they’ll provide a written response to each of your essential and desirable criteria. Clearly stating the skills and experience you need here will make your evaluation easier later.
+  <br>
+  <br>
+  Remember, when evaluating consider all relevant financial and non-financial costs and benefits including:
+  <ul>
+    <li>the quality of the goods and services</li>
+    <li>fitness for purpose of the proposal</li>
+    <li>the seller’s experience and performance history</li>
+    <li>flexibility of the proposal, including innovation and adaptability over the lifecycle of the procurement</li>
+    <li>environmental sustainability of the proposed goods and services, such as energy efficiency and environmental impact</li>
+    <li>whole-of-life costs</li>
+  </ul>
+
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+questions:
+  - essentialRequirementsSpecialists
+  - niceToHaveRequirementsSpecialists
+
+empty_message: Set evaluation criteria

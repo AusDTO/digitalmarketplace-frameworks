@@ -1,0 +1,17 @@
+name: Nice-to-have skills and experience
+question: Do you have any of the nice-to-have skills and experience?
+question_advice: |
+  This section is optional but may help your application stand out.
+
+type: boolean_list
+number_of_items: 20
+optional: true
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+      - digital-professionals
+      - user-research-participants
+
+empty_message: Respond to nice-to-have requirements

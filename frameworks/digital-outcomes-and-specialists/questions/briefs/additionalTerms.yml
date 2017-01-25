@@ -6,7 +6,7 @@ question_advice: |
   Read about [how the terms and conditions work](https://www.gov.uk/guidance/terms-and-conditions-of-digital-marketplace-frameworks).
 optional: true
 type: textbox_large
-max_length_in_words: 100
+max_length_in_words: 500
 depends:
   - "on": "lot"
     being:
@@ -16,5 +16,5 @@ depends:
 validations:
   -
     name: under_word_limit
-    message: 'Your answer must be no more than 100 words.'
+    message: 'Your answer must be no more than 500 words.'
 empty_message: Add terms and conditions

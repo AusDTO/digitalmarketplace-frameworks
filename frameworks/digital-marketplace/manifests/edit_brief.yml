@@ -3,14 +3,15 @@
   editable: True
   step: 1
   questions:
-    - titleSpecialists
     - titleOutcomesParticipants
+
 -
-  name: Specialist role
+  name: Role
   editable: True
   step: 1
   questions:
-    - specialistRole
+    - titleSpecialists
+
 -
   name: Location
   editable: True
@@ -88,6 +89,7 @@
     - technicalCompetenceCriteriaOutcomes
     - culturalFitCriteriaOutcomes
     - priceCriteria
+    - areaOfExpertise
     - evaluationTypeOutcomes
 
 -
@@ -115,6 +117,7 @@
     You must tell specialists how you’ll evaluate and assess them.
 
   questions:
+    - areaOfExpertiseSpecialists
     - numberOfSuppliersSpecialists
     - weightingSpecialists
     - technicalCompetenceCriteriaSpecialists

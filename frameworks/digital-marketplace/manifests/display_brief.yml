@@ -67,6 +67,8 @@
     - culturalFitCriteriaOutcomes
     - culturalFitCriteriaSpecialists
     - priceCriteria
+    - areaOfExpertise
+    - areaOfExpertiseSpecialists
     - evaluationTypeOutcomes
     - evaluationTypeSpecialists
     - evaluationTypeParticipants

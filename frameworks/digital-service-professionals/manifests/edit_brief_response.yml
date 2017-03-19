@@ -19,4 +19,5 @@
     - availabilityOutcomes
     - availabilitySpecialists
     - dayRate
+    - attachedDocumentURL
     - respondToEmailAddress

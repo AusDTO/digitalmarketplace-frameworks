@@ -276,7 +276,7 @@ def multiquestion(question):
 
 QUESTION_TYPES = {
     'text': text_property,
-    'upload': uri_property,
+    'upload': text_property,  # uri_property requires http prefix etc.
     'textbox_large': text_property,
     'checkboxes': checkbox_property,
     'radios': radios_property,

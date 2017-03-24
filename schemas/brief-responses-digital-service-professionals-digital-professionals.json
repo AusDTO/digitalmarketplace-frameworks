@@ -3,8 +3,11 @@
   "additionalProperties": false,
   "properties": {
     "attachedDocumentURL": {
-      "format": "uri",
-      "type": "string"
+      "items": {
+        "minLength": 0,
+        "type": "string"
+      },
+      "type": "array"
     },
     "availability": {
       "maxLength": 100,
@@ -17,7 +20,7 @@
     },
     "essentialRequirements": {
       "items": {
-        "type": "boolean"
+        "type": "string"
       },
       "maxItems": 20,
       "minItems": 1,
@@ -25,7 +28,7 @@
     },
     "niceToHaveRequirements": {
       "items": {
-        "type": "boolean"
+        "type": "string"
       },
       "maxItems": 20,
       "minItems": 0,
@@ -38,7 +41,6 @@
     }
   },
   "required": [
-    "attachedDocumentURL",
     "availability",
     "dayRate",
     "essentialRequirements",

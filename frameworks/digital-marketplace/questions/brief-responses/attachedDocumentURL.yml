@@ -17,4 +17,4 @@ validations:
   -
     name: file_can_be_saved
     message: 'Your document failed to upload. Please try again.'
-question: 'Attached document'
+question: 'Attach a supporting document'

@@ -108,6 +108,24 @@ def text_property(question):
     return {question['id']: data}
 
 
+def upload_property(question):
+    data = {
+        "items": {
+            "type": "string",
+            "minLength": 0 if question.get('optional') else 1
+        },
+        "type": "array"
+    }
+
+    format_limit = question.get('limits', {}).get('format')
+    if format_limit:
+        data['format'] = format_limit
+
+    data.update(parse_question_limits(question))
+
+    return {question['id']: data}
+
+
 def uri_property(question):
     return {question['id']: {
         "type": "string",
@@ -276,7 +294,7 @@ def multiquestion(question):
 
 QUESTION_TYPES = {
     'text': text_property,
-    'upload': text_property,  # uri_property requires http prefix etc.
+    'upload': upload_property,  # uri_property requires http prefix etc.
     'textbox_large': text_property,
     'checkboxes': checkbox_property,
     'radios': radios_property,

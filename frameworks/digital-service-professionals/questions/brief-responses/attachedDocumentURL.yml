@@ -5,7 +5,7 @@ depends:
       - digital-outcome
       - digital-professionals
       - digital-marketplace
-hint: 'Please upload your attached documents such as CV or Proposal. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). The maximum file size of each document is 5MB.)'
+hint: 'Please upload your attached documents such as CV or Proposal. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). The maximum file size of each document is 5MB.'
 type: upload
 optional: true
 validations:

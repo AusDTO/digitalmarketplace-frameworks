@@ -4,9 +4,8 @@ depends:
     being:
       - digital-professionals
       - digital-marketplace
-hint: 'Please upload your attached documents such as CV or Proposal. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). The maximum file size of each document is 5MB.'
+hint: 'Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). The maximum file size of each document is 5MB.'
 type: upload
-optional: true
 validations:
   -
     name: file_is_open_document_format
@@ -17,4 +16,4 @@ validations:
   -
     name: file_can_be_saved
     message: 'Your document failed to upload. Please try again.'
-question: 'Attach a supporting document'
+question: 'Attach a resume'

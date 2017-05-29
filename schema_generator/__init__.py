@@ -173,6 +173,10 @@ def list_property(question):
         "pattern": "^(?:\\S+\\s+){0,9}\\S+$"
     }
 
+    format_limit = question.get('limits', {}).get('format')
+    if format_limit:
+        items['format'] = format_limit
+
     items.update(parse_question_limits(question, for_items=True))
 
     return {question['id']: {

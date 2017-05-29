@@ -3,6 +3,8 @@ name: ''
 question: 'Enter supplier email address'
 question_advice: ''
 type: text
+limits:
+  format: email
 optional: true
 depends:
   - "on": "lot"
@@ -16,4 +18,7 @@ validations:
   -
     name: under_character_limit
     message: 'Criteria must be no more than 300 characters.'
+  -
+    name: invalid_format
+    message: "You must enter a valid email address."
 empty_message: 'Enter supplier email address'

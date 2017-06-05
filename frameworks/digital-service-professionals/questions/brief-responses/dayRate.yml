@@ -1,6 +1,5 @@
 name: Day rate
-question: What's your day rate?
-hint: For example, $900 per day.
+question: What is your daily rate, including GST?
 
 type: pricing_aud
 fields:

@@ -8,3 +8,4 @@ venv/
 # vim files
 *.swp
 *.swo
+*.iml

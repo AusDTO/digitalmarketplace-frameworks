@@ -6,6 +6,8 @@ list_item_name: 'seller list'
 number_of_items: 15
 type: list
 optional: true
+limits:
+  max_value: 100
 depends:
   - "on": "lot"
     being:

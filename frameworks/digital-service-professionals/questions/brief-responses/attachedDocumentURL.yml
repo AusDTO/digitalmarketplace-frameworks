@@ -1,4 +1,5 @@
 name: attachedDocumentURL
+optional: true
 depends:
   - "on": "lot"
     being:

@@ -118,6 +118,7 @@
     You must tell specialists how you’ll evaluate and assess them.
 
   questions:
+    - areaOfExpertiseOutcomes
     - areaOfExpertiseSpecialists
     - numberOfSuppliersSpecialists
     - weightingSpecialists

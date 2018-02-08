@@ -4,11 +4,11 @@ name: "Area of expertise"
 question: "Choose the primary area of expertise needed to complete the tasks in your brief"
 question_advice: ""
 type: radios
-optional: false
+optional: true
 depends:
   - "on": "lot"
     being:
-      - digital-professionals
+      - digital-outcome
 validations:
   -
     message: "You need to answer this question."

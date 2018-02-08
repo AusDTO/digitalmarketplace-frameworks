@@ -2,7 +2,7 @@ name: Where will the work take place?
 question: Location
 id: location
 question_advice: Select the main location. If the specialist can work anywhere, choose 'Can work remotely'.
-type: radios
+type: checkboxes
 options:
   - label: "Australian Capital Territory"
   - label: "New South Wales"

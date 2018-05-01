@@ -39,9 +39,9 @@ options:
     label: "Content and publishing"
     value: "Content and Publishing"
   -
-    description: "Change, training and transformation is about embedding more efficient work culture and practices in government. Examples include digital transformation advice, agile coaching, change management and training in new ways of working."
-    label: "Change, training and transformation"
-    value: "Change, Training and Transformation"
+    description: "Change and transformation is about embedding more efficient work culture and practices in government. Examples include digital transformation advice, agile coaching, change management and training in new ways of working."
+    label: "Change and transformation"
+    value: "Change and Transformation"
   -
     description: "Marketing, communications and engagement create awareness, adoption and ongoing use of a digital service. Examples include advertising, PR, event marketing, content marketing, social, SEO and growth hacking."
     label: "Marketing, communications and engagement"
@@ -58,4 +58,8 @@ options:
     description: "Emerging technology is about developing proofs of concept using recent digital advances for commercial or government purposes. Examples include artificial intelligence, robotics, wearables, Internet of Things and augmented or virtual reality."
     label: "Emerging technologies"
     value: "Emerging technologies"
+  -
+    description: "Training description"
+    label: "Training"
+    value: "Training"
 

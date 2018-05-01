@@ -20,11 +20,12 @@
         "Software engineering and Development",
         "Support and Operations",
         "Content and Publishing",
-        "Change, Training and Transformation",
+        "Change and Transformation",
         "Marketing, Communications and Engagement",
         "Cyber security",
         "Data science",
-        "Emerging technologies"
+        "Emerging technologies",
+        "Training"
       ]
     },
     "budgetRange": {
@@ -84,17 +85,17 @@
       "type": "string"
     },
     "location": {
-      "enum": [
-        "Australian Capital Territory",
-        "New South Wales",
-        "Northern Territory",
-        "Queensland",
-        "South Australia",
-        "Tasmania",
-        "Victoria",
-        "Western Australia",
-        "Offsite"
-      ]
+        "enum": [
+          "Australian Capital Territory",
+          "New South Wales",
+          "Northern Territory",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia",
+          "Offsite"
+        ]
     },
     "niceToHaveRequirements": {
       "items": {

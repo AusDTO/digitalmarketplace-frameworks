@@ -1,0 +1,26 @@
+name: Where can the work take place?
+question: Location
+id: location
+question_advice: Select locations where the work can be done. If the training can take place anywhere, choose 'Can work remotely'.
+
+type: checkboxes
+options:
+  - label: "Australian Capital Territory"
+  - label: "New South Wales"
+  - label: "Northern Territory"
+  - label: "Queensland"
+  - label: "South Australia"
+  - label: "Tasmania"
+  - label: "Victoria"
+  - label: "Western Australia"
+  - label: "Can work remotely"
+    value: "Offsite"
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one location to continue.'
+empty_message: Choose location

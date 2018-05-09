@@ -11,6 +11,7 @@ depends:
     being:
       - digital-professionals
       - digital-outcome
+      - training
 validations:
   -
     name: answer_required

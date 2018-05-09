@@ -8,6 +8,7 @@ depends:
     being:
       - digital-professionals
       - digital-outcome
+      - training
 questions:
   - specifySellerRadio
   - specifySellerList

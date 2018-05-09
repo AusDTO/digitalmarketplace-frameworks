@@ -4,6 +4,7 @@
   step: 1
   questions:
     - titleOutcomesParticipants
+    - titleTraining
 
 -
   name: Role
@@ -20,6 +21,7 @@
     - locationOutcomes
     - locationSpecialists
     - locationParticipants
+    - locationTraining
 -
   name: Description of work
   editable: True
@@ -54,6 +56,7 @@
     - additionalTerms
     - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
+    - budgetRangeTraining
     - summary
 
 -
@@ -87,8 +90,11 @@
 
   questions:
     - numberOfSuppliersOutcomes
+    - numberOfSuppliersTraining
     - weightingOutcomes
+    - weightingTraining
     - technicalCompetenceCriteriaOutcomes
+    - technicalCompetenceCriteriaTraining
     - culturalFitCriteriaOutcomes
     - priceCriteria
     - evaluationTypeOutcomes

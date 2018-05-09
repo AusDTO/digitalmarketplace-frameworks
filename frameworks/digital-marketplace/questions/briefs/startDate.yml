@@ -8,6 +8,7 @@ depends:
     being:
       - digital-outcome
       - digital-professionals
+      - training
 validations:
   -
     name: answer_required

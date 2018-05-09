@@ -7,10 +7,12 @@
     - locationOutcomes
     - locationSpecialists
     - locationParticipants
+    - locationTraining
     - researchDates
     - organisation
     - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
+    - budgetRangeTraining
 -
   name: About the work
   questions:
@@ -61,8 +63,10 @@
     - numberOfSuppliersOutcomes
     - numberOfSuppliersSpecialists
     - numberOfSuppliersParticipants
+    - numberOfSuppliersTraining
     - successCriteriaOutcomes
     - successCriteriaParticipants
+    - successCriteriaTraining
     - culturalFitCriteriaOutcomes
     - culturalFitCriteriaSpecialists
     - priceCriteria
@@ -73,3 +77,4 @@
     - weightingOutcomes
     - weightingSpecialists
     - weightingParticipants
+    - weightingTraining

@@ -1,8 +1,41 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "additionalProperties": false,
-  "properties": {},
-  "required": [],
+  "properties": {
+    "attachedDocumentURL": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "essentialRequirements": {
+      "items": {
+        "type": "boolean"
+      },
+      "maxItems": 20,
+      "minItems": 1,
+      "type": "array"
+    },
+    "niceToHaveRequirements": {
+      "items": {
+        "type": "boolean"
+      },
+      "maxItems": 20,
+      "minItems": 0,
+      "type": "array"
+    },
+    "respondToEmailAddress": {
+      "format": "email",
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "attachedDocumentURL",
+    "essentialRequirements",
+    "respondToEmailAddress"
+  ],
   "title": "Training Brief Response Schema",
   "type": "object"
 }

@@ -13,5 +13,6 @@ depends:
       - digital-outcome
       - digital-professionals
       - user-research-participants
+      - training
 
 empty_message: Respond to nice-to-have requirements

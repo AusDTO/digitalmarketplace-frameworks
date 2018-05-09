@@ -4,6 +4,7 @@ depends:
     being:
       - digital-professionals
       - digital-marketplace
+      - training
 hint: 'Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). The maximum file size of each document is 5MB.'
 type: upload
 validations:

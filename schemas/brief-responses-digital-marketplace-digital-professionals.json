@@ -20,7 +20,9 @@
     },
     "essentialRequirements": {
       "items": {
-        "type": "boolean"
+        "maxLength": 100,
+        "pattern": "^(?:\\S+\\s+){0,149}\\S+$",
+        "type": "string"
       },
       "maxItems": 20,
       "minItems": 1,
@@ -28,7 +30,9 @@
     },
     "niceToHaveRequirements": {
       "items": {
-        "type": "boolean"
+        "maxLength": 100,
+        "pattern": "^(?:\\S+\\s+){0,149}\\S+$",
+        "type": "string"
       },
       "maxItems": 20,
       "minItems": 0,
@@ -38,6 +42,10 @@
       "format": "email",
       "minLength": 1,
       "type": "string"
+    },
+    "specialistName": {
+      "minLength": 1,
+      "type": "string"
     }
   },
   "required": [
@@ -45,7 +53,8 @@
     "availability",
     "dayRate",
     "essentialRequirements",
-    "respondToEmailAddress"
+    "respondToEmailAddress",
+    "specialistName"
   ],
   "title": "Digital Service Professionals Brief Response Schema",
   "type": "object"

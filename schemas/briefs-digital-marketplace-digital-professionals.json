@@ -84,17 +84,23 @@
       "type": "string"
     },
     "location": {
-      "enum": [
-        "Australian Capital Territory",
-        "New South Wales",
-        "Northern Territory",
-        "Queensland",
-        "South Australia",
-        "Tasmania",
-        "Victoria",
-        "Western Australia",
-        "Offsite"
-      ]
+      "items": {
+        "enum": [
+          "Australian Capital Territory",
+          "New South Wales",
+          "Northern Territory",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia",
+          "Offsite"
+        ]
+      },
+      "maxItems": 9,
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
     },
     "niceToHaveRequirements": {
       "items": {
@@ -148,7 +154,7 @@
     "sellerEmailList": {
       "items": {
         "format": "email",
-        "maxLength": 100,
+        "maxLength": 300,
         "pattern": "^(?:\\S+\\s+){0,9}\\S+$",
         "type": "string"
       },

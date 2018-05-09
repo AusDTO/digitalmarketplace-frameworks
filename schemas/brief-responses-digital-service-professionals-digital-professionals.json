@@ -4,7 +4,7 @@
   "properties": {
     "attachedDocumentURL": {
       "items": {
-        "minLength": 0,
+        "minLength": 1,
         "type": "string"
       },
       "type": "array"
@@ -20,6 +20,8 @@
     },
     "essentialRequirements": {
       "items": {
+        "maxLength": 100,
+        "pattern": "^(?:\\S+\\s+){0,149}\\S+$",
         "type": "string"
       },
       "maxItems": 20,
@@ -28,6 +30,8 @@
     },
     "niceToHaveRequirements": {
       "items": {
+        "maxLength": 100,
+        "pattern": "^(?:\\S+\\s+){0,149}\\S+$",
         "type": "string"
       },
       "maxItems": 20,
@@ -38,6 +42,10 @@
       "format": "email",
       "minLength": 1,
       "type": "string"
+    },
+    "specialistName": {
+      "minLength": 1,
+      "type": "string"
     }
   },
   "required": [
@@ -45,7 +53,8 @@
     "availability",
     "dayRate",
     "essentialRequirements",
-    "respondToEmailAddress"
+    "respondToEmailAddress",
+    "specialistName"
   ],
   "title": "Digital Service Professionals Brief Response Schema",
   "type": "object"

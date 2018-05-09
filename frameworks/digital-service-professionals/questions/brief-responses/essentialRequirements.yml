@@ -2,8 +2,9 @@ name: Essential skills and experience
 question: Do you have the essential skills and experience?
 question_advice: You must have all essential skills and experience to apply for this opportunity.
 
-type: boolean_list
+type: list
 number_of_items: 20
+max_length_in_words: 150
 depends:
   - "on": "lot"
     being:

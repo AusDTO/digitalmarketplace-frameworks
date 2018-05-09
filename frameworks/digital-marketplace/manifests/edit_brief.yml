@@ -182,6 +182,7 @@
   questions:
     - questionAndAnswerSessionDetailsOutcomesParticipants
     - questionAndAnswerSessionDetailsSpecialists
+    - questionAndAnswerSessionDetailsTraining
 
 -
   name: Who can respond

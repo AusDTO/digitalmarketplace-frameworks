@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": false,
+  "properties": {},
+  "required": [],
+  "title": "Training Service Schema",
+  "type": "object"
+}

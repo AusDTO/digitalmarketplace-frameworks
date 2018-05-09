@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "budgetRange": {
+      "minLength": 0,
+      "pattern": "^$|(^(?:\\S+\\s+){0,199}\\S+$)",
+      "type": "string"
+    },
+    "essentialRequirements": {
+      "items": {
+        "maxLength": 300,
+        "pattern": "^(?:\\S+\\s+){0,49}\\S+$",
+        "type": "string"
+      },
+      "maxItems": 20,
+      "minItems": 1,
+      "type": "array"
+    },
+    "location": {
+      "items": {
+        "enum": [
+          "Australian Capital Territory",
+          "New South Wales",
+          "Northern Territory",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia",
+          "Offsite"
+        ]
+      },
+      "maxItems": 9,
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "lunchWeighting": {
+      "exclusiveMaximum": false,
+      "maximum": 100,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "niceToHaveRequirements": {
+      "items": {
+        "maxLength": 300,
+        "pattern": "^(?:\\S+\\s+){0,49}\\S+$",
+        "type": "string"
+      },
+      "maxItems": 20,
+      "minItems": 0,
+      "type": "array"
+    },
+    "numberOfSuppliers": {
+      "exclusiveMaximum": false,
+      "maximum": 15,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "organisation": {
+      "maxLength": 100,
+      "minLength": 1,
+      "type": "string"
+    },
+    "priceWeighting": {
+      "exclusiveMaximum": false,
+      "maximum": 100,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "requirementsLength": {
+      "enum": [
+        "1 week",
+        "2 weeks"
+      ]
+    },
+    "sellerEmail": {
+      "format": "email",
+      "maxLength": 300,
+      "minLength": 0,
+      "type": "string"
+    },
+    "sellerEmailList": {
+      "items": {
+        "format": "email",
+        "maxLength": 300,
+        "pattern": "^(?:\\S+\\s+){0,9}\\S+$",
+        "type": "string"
+      },
+      "maxItems": 15,
+      "minItems": 0,
+      "type": "array"
+    },
+    "sellerSelector": {
+      "enum": [
+        "allSellers",
+        "someSellers",
+        "oneSeller"
+      ]
+    },
+    "startDate": {
+      "maxLength": 100,
+      "minLength": 1,
+      "type": "string"
+    },
+    "successCriteria": {
+      "items": {
+        "maxLength": 300,
+        "pattern": "^(?:\\S+\\s+){0,49}\\S+$",
+        "type": "string"
+      },
+      "maxItems": 20,
+      "minItems": 1,
+      "type": "array"
+    },
+    "summary": {
+      "minLength": 1,
+      "pattern": "^(?:\\S+\\s+){0,49}\\S+$",
+      "type": "string"
+    },
+    "technicalWeighting": {
+      "exclusiveMaximum": false,
+      "maximum": 100,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "title": {
+      "maxLength": 100,
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "essentialRequirements",
+    "location",
+    "lunchWeighting",
+    "numberOfSuppliers",
+    "organisation",
+    "priceWeighting",
+    "requirementsLength",
+    "sellerSelector",
+    "startDate",
+    "successCriteria",
+    "summary",
+    "technicalWeighting",
+    "title"
+  ],
+  "title": "Training Brief Schema",
+  "type": "object"
+}

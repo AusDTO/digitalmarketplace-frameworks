@@ -69,6 +69,11 @@
       "minimum": 0,
       "type": "integer"
     },
+    "questionAndAnswerSessionDetails": {
+      "minLength": 0,
+      "pattern": "^$|(^(?:\\S+\\s+){0,99}\\S+$)",
+      "type": "string"
+    },
     "requirementsLength": {
       "enum": [
         "1 week",

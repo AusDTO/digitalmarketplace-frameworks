@@ -18,7 +18,9 @@
     - niceToHaveRequirements
     - availabilityOutcomes
     - availabilitySpecialists
+    - availabilityTraining
     - dayRate
     - attachedDocumentURL
     - respondToEmailAddress
     - specialistName
+    - trainingCost

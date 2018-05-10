@@ -9,6 +9,11 @@
       },
       "type": "array"
     },
+    "availability": {
+      "maxLength": 100,
+      "minLength": 1,
+      "type": "string"
+    },
     "essentialRequirements": {
       "items": {
         "maxLength": 100,
@@ -29,16 +34,16 @@
       "minItems": 0,
       "type": "array"
     },
-    "respondToEmailAddress": {
-      "format": "email",
-      "minLength": 1,
+    "trainingCost": {
+      "pattern": "^\\d{1,15}(?:\\.\\d{1,5})?$",
       "type": "string"
     }
   },
   "required": [
     "attachedDocumentURL",
+    "availability",
     "essentialRequirements",
-    "respondToEmailAddress"
+    "trainingCost"
   ],
   "title": "Training Brief Response Schema",
   "type": "object"

@@ -1,0 +1,22 @@
+name: Training Cost
+question: What is your total cost, including GST?
+
+type: pricing_aud
+fields:
+  price: trainingCost
+
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_money_format
+    field: trainingCost
+    message: "Day rate must be a number, without units. For example: 99.95"
+  - name: max_less_than_min
+    field: trainingCost
+    message: "This can't be more than the maximum training cost you've already provided."
+
+empty_message: Set training cost

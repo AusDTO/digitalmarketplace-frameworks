@@ -12,7 +12,6 @@ depends:
       - digital-outcome
       - digital-professionals
       - user-research-participants
-      - training
 
 validations:
   - name: answer_required

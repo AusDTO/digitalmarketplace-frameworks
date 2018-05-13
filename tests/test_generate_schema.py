@@ -1,22 +1,28 @@
+import os
 import re
 from math import isnan
-import os
+
+import mock
+import pytest
+from dmcontent.questions import ContentQuestion
+from hypothesis import strategies as st
+from hypothesis import assume, given
+from hypothesis.settings import Settings
+
+from schema_generator import (SCHEMAS, add_section, add_sections,
+                              boolean_list_property, build_question_properties,
+                              checkbox_property, drop_non_schema_questions,
+                              empty_schema, generate_schema, list_property,
+                              load_manifest, load_questions, multiquestion,
+                              number_property, parse_question_limits,
+                              price_string, pricing_property, radios_property,
+                              text_property, uri_property)
 
 try:
     import __builtin__ as builtins
 except ImportError:
     import builtins
 
-import mock
-import pytest
-from dmcontent.questions import ContentQuestion
-from hypothesis.settings import Settings
-from hypothesis import given, assume, strategies as st
-from schema_generator import text_property, uri_property, parse_question_limits, \
-    checkbox_property, number_property, multiquestion, \
-    build_question_properties, empty_schema, load_questions, \
-    drop_non_schema_questions, radios_property, list_property, boolean_list_property, \
-    price_string, pricing_property, generate_schema, SCHEMAS
 
 Settings.default.database = None
 
@@ -62,7 +68,8 @@ def checkboxes():
 
 
 def test_drop_non_schema_questions():
-    questions = load_questions('services', 'g-cloud-7', 'scs')
+    manifest = load_manifest('services', 'g-cloud-7', 'scs')
+    questions = load_questions(manifest)
     # lotName is in G-Cloud 7
     assert 'lotName' in questions.keys()
     drop_non_schema_questions(questions)
@@ -421,3 +428,37 @@ def test_generate_dsp_brief_opens_files(opened_files, tmpdir):
                                   x.endswith("manifests/edit_brief.yml")) and
                               not x.endswith("lot.yml")])
     assert dos_expected_files == dos_opened_files
+
+
+section_to_add = {
+    'name': 'Description of work',
+    'questions': [{
+        '_optional_form_fields': ['securityClearance'],
+        'required_form_fields': ['organisation', 'phase']
+    }]
+}
+
+
+def test_add_section():
+    section = add_section(section_to_add)
+    assert 'name' in section
+    assert 'required' in section
+    assert 'optional' in section
+    assert section['name'] == 'Description of work'
+    assert section['optional'] == ['securityClearance']
+    assert section['required'] == ['organisation', 'phase']
+
+
+def test_add_sections():
+    schema = empty_schema('Test')
+
+    add_sections(schema, [])
+    assert 'sections' in schema
+    assert schema['sections'] == []
+
+    add_sections(schema, [section_to_add])
+    assert schema['sections'] == [{
+        'name': 'Description of work',
+        'optional': ['securityClearance'],
+        'required': ['organisation', 'phase']
+    }]

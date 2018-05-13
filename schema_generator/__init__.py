@@ -63,7 +63,7 @@ SCHEMAS = {
 }
 
 
-def load_questions(schema_type, framework_slug, lot_slug):
+def load_manifest(schema_type, framework_slug, lot_slug):
     loader = ContentLoader('./')
     loader.load_manifest(
         framework_slug,
@@ -71,8 +71,12 @@ def load_questions(schema_type, framework_slug, lot_slug):
         MANIFESTS[schema_type]['manifest']
     )
 
-    builder = loader.get_builder(framework_slug, MANIFESTS[schema_type]['manifest']).filter({'lot': lot_slug})
-    return {q['id']: q for q in sum((s.questions for s in builder.sections), [])}
+    return loader.get_builder(framework_slug, MANIFESTS[schema_type]['manifest']).filter({'lot': lot_slug})
+
+
+def load_questions(manifest):
+    return {q['id']: q for q in
+            sum((s.questions for s in manifest.sections), [])}
 
 
 def drop_non_schema_questions(questions):
@@ -457,14 +461,31 @@ def add_multiquestion_dependencies(schema, questions):
         schema['dependencies'] = dependencies
 
 
+def add_section(section):
+    return {
+        'name': section['name'],
+        'optional': [optional for question in section['questions']
+                     for optional in question['_optional_form_fields']],
+        'required': [required for question in section['questions']
+                     for required in question['required_form_fields']]
+    }
+
+
+def add_sections(schema, sections):
+    schema['sections'] = [add_section(section) for section in sections]
+
+
 def generate_schema(path, schema_type, schema_name, framework_slug, lot_slug):
-    questions = load_questions(schema_type, framework_slug, lot_slug)
+    manifest = load_manifest(schema_type, framework_slug, lot_slug)
+    questions = load_questions(manifest)
     drop_non_schema_questions(questions)
     schema = empty_schema(schema_name)
 
     build_schema_properties(schema, questions)
     add_multiquestion_anyof(schema, questions)
     add_multiquestion_dependencies(schema, questions)
+
+    add_sections(schema, manifest.sections)
 
     with open(os.path.join(path, '{}-{}-{}.json'.format(schema_type, framework_slug, lot_slug)), 'w') as f:
         json.dump(schema, f, sort_keys=True, indent=2, separators=(',', ': '))

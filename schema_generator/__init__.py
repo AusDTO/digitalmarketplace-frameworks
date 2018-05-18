@@ -61,6 +61,7 @@ SCHEMAS = {
          'digital-marketplace', 'digital-outcome'),
     ]
 }
+EMAIL_PATTERN = r'(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)'
 
 
 def load_manifest(schema_type, framework_slug, lot_slug):
@@ -106,6 +107,8 @@ def text_property(question):
     format_limit = question.get('limits', {}).get('format')
     if format_limit:
         data['format'] = format_limit
+        if (format_limit == 'email'):
+            data['pattern'] = EMAIL_PATTERN
 
     data.update(parse_question_limits(question))
 
@@ -180,6 +183,8 @@ def list_property(question):
     format_limit = question.get('limits', {}).get('format')
     if format_limit:
         items['format'] = format_limit
+        if (format_limit == 'email'):
+            items['pattern'] = EMAIL_PATTERN
 
     items.update(parse_question_limits(question, for_items=True))
 

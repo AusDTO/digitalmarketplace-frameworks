@@ -9,6 +9,8 @@
     },
     "essentialRequirements": {
       "items": {
+        "maxLength": 100,
+        "pattern": "^(?:\\S+\\s+){0,9}\\S+$",
         "type": "string"
       },
       "maxItems": 20,
@@ -17,6 +19,8 @@
     },
     "niceToHaveRequirements": {
       "items": {
+        "maxLength": 100,
+        "pattern": "^(?:\\S+\\s+){0,9}\\S+$",
         "type": "string"
       },
       "maxItems": 20,
@@ -26,6 +30,7 @@
     "respondToEmailAddress": {
       "format": "email",
       "minLength": 1,
+      "pattern": "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$)",
       "type": "string"
     }
   },
@@ -33,6 +38,19 @@
     "availability",
     "essentialRequirements",
     "respondToEmailAddress"
+  ],
+  "sections": [
+    {
+      "name": "Apply for this opportunity",
+      "optional": [
+        "niceToHaveRequirements"
+      ],
+      "required": [
+        "essentialRequirements",
+        "availability",
+        "respondToEmailAddress"
+      ]
+    }
   ],
   "title": "Digital Outcome Brief Response Schema",
   "type": "object"

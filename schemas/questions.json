@@ -111,7 +111,8 @@
               "under_200_words",
               "under_word_limit",
               "under_character_limit",
-              "total_should_be_100"
+              "total_should_be_100",
+              "email_not_found"
             ]
           },
           "field": {

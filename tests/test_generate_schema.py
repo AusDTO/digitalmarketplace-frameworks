@@ -16,7 +16,8 @@ from schema_generator import (SCHEMAS, add_section, add_sections,
                               load_manifest, load_questions, multiquestion,
                               number_property, parse_question_limits,
                               price_string, pricing_property, radios_property,
-                              text_property, uri_property)
+                              text_property, uri_property,
+                              EMAIL_PATTERN)
 
 try:
     import __builtin__ as builtins
@@ -99,7 +100,14 @@ def test_optional_text_property(id_name, optional):
 @given(st.text())
 def test_text_property_format(id_name):
     result = text_property({"id": id_name, "limits": {"format": "email"}})
-    assert result == {id_name: {"type": "string", "format": "email", "minLength": 1}}
+    assert result == {
+        id_name: {
+            "type": "string", 
+            "format": "email", 
+            "minLength": 1,
+            "pattern": EMAIL_PATTERN
+        }
+    }
 
 
 @given(st.text())

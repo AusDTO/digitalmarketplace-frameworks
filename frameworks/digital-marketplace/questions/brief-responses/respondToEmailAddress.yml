@@ -16,5 +16,5 @@ depends:
 validations:
   - name: answer_required
     message: 'You need to answer this question.'
-  - name: invalid_format
+  - name: under_word_limit
     message: "You must enter a valid email address."

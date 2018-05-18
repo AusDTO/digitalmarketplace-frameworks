@@ -1,6 +1,6 @@
 id: sellerEmail
 name: ''
-question: 'Enter supplier email address'
+question: 'Enter seller email address'
 question_advice: ''
 type: text
 limits:
@@ -19,6 +19,9 @@ validations:
     name: under_character_limit
     message: 'Criteria must be no more than 300 characters.'
   -
-    name: invalid_format
+    name: under_word_limit
     message: "You must enter a valid email address."
-empty_message: 'Enter supplier email address'
+  -
+    name: email_not_found
+    message: "Seller is not registered in the marketplace"
+empty_message: 'Enter seller email address'

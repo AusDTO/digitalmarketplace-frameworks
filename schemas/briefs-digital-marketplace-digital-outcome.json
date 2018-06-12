@@ -23,7 +23,6 @@
       "type": "string"
     },
     "contractLength": {
-      "maxLength": 100,
       "minLength": 0,
       "pattern": "^$|(^(?:\\S+\\s+){0,99}\\S+$)",
       "type": "string"

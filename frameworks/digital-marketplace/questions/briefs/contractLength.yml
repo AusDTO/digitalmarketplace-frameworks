@@ -10,6 +10,6 @@ depends:
       - digital-professionals
 validations:
   -
-    name: under_character_limit
-    message: "Your answer must be no more than 100 characters."
+    name: under_word_limit
+    message: 'Your answer must be no more than 100 words.'
 empty_message: Set expected contract length

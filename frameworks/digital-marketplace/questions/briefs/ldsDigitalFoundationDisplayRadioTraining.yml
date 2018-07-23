@@ -4,7 +4,7 @@ type: radios
 optional: true
 options:
   -
-    label: Ask sellers to propose a training structure based on the Digital Foundation Learning Design Standard
+    label: Sellers to propose a training structure based on the Digital Foundation Learning Design Standard
     value: sellerProposal
   -
     label: ' '

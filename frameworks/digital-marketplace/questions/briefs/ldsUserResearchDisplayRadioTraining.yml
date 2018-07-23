@@ -4,7 +4,7 @@ type: radios
 optional: true
 options:
   -
-    label: Ask sellers to propose a training structure based on the User Research LDS
+    label: Sellers to propose a training structure based on the User Research Learning Design Standard
     value: sellerProposal
   -
     label: ' '

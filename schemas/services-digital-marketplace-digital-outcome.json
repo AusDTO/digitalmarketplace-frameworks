@@ -249,6 +249,7 @@
   ],
   "sections": [
     {
+      "editable": true,
       "name": "Service essentials",
       "optional": [],
       "required": [
@@ -259,6 +260,7 @@
       ]
     },
     {
+      "editable": false,
       "name": "Team capabilities",
       "optional": [
         "performanceAnalysisTypes",
@@ -273,6 +275,7 @@
       "required": []
     },
     {
+      "editable": true,
       "name": "Outcomes locations",
       "optional": [],
       "required": [

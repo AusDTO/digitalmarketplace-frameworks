@@ -1,0 +1,16 @@
+id: trainingLength
+question: What is the ideal length of time needed for the training?
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your training length needs to be 100 characters or less."
+empty_message: Add training length

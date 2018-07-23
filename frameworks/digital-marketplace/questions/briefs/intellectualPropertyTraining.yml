@@ -1,0 +1,19 @@
+id: intellectualProperty
+name: Intellectual property
+question: ''
+question_advice: |
+  What is your preference for the use of intellectual property (IP) in training? You must not discriminate against sellers based on their IP approach.
+  
+type: radios
+options:
+  -
+    label: Up for negotiation
+    value: negotiation
+  -
+    label: Commonwealth owns the intellectual property
+    value: commonwealth
+depends:
+  - "on": "lot"
+    being:
+      - training
+empty_message: Choose who has rights to the intellectual property

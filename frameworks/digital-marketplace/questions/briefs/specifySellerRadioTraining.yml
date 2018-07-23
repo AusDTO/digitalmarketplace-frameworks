@@ -1,0 +1,24 @@
+name: ''
+question: 'Select which sellers can respond'
+id: sellerSelector
+question_advice: ''
+type: radios
+options:
+  -
+    label: All qualified sellers
+    value: allSellers
+  -
+    label: Specify selected sellers
+    value: someSellers
+  -
+    label: Specify an individual seller
+    value: oneSeller
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Set technical competence criteria

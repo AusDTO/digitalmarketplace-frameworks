@@ -1,0 +1,15 @@
+id: whyTraining
+name: Why is the training needed?
+question: Reason for the training
+type: textbox_large
+max_length_in_words: 500
+optional: false
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 500 words.'
+empty_message: Describe why the training is being done

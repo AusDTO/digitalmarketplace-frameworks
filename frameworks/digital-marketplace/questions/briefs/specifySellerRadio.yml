@@ -1,5 +1,5 @@
 name: ''
-question: 'Seller Selection'
+question: 'Select which sellers can respond'
 id: sellerSelector
 question_advice: ''
 type: radios

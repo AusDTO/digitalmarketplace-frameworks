@@ -1,0 +1,20 @@
+id: ldsUserResearch
+name: User research
+question: User research
+question_advice: |
+  Download the <a href="/static/media/documents/user-research-lds-units.pdf">User Research Learning Design Standard (PDF 247KB)</a> to clarify your needs.
+type: multiquestion
+questions:
+  - ldsUserResearchRadioTraining
+  - ldsUserResearchCheckboxTraining
+  - ldsUserResearchTextTraining
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'
+
+empty_message: Describe what you need the training to cover

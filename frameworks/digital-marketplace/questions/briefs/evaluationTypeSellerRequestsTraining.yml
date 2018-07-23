@@ -1,0 +1,17 @@
+id: evaluationTypeSellerRequests
+question: 'Step 2: Select what you will request later from shortlisted sellers:'
+type: checkboxes
+
+options:
+  - label: Case study
+  - label: References
+  - label: Interview
+  - label: Presentation
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'

@@ -1,0 +1,14 @@
+id: approach
+name: Training methods
+question: ''
+question_advice: A training method is a delivery format for training, for example, a workshop or on-the-job coaching.
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - training
+questions:
+  - approachRadioTraining
+  - approachTextTraining
+empty_message: Describe training method

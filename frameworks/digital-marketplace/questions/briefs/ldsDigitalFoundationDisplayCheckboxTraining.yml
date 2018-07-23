@@ -1,0 +1,25 @@
+id: ldsDigitalFoundationUnits
+question: 'Specific unit(s) from the Digital Foundations Learning Design Standard'
+type: checkboxes
+optional: true
+options:
+  - label: "Unit 1: The Australian Government’s digital service context"
+    description: >
+       To work effectively within the Australian Government delivery context.
+  - label: "Unit 2: Agile and working in a multidisciplinary team​"
+    description: >
+       Explain the background, core practices and philosophies behind an Agile mindset and team.
+  - label: "Unit 3: Working in a digital delivery team - design and delivery phases​"
+    description: >
+       Identify and explain the design and delivery phases.
+  - label: "Unit 4: Frameworks for digital services"
+    description: >
+       Explain the health, safety, and legal considerations in digital service design.
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'

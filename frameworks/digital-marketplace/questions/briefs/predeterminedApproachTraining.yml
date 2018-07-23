@@ -1,0 +1,15 @@
+question: Do you have a predetermined training approach or are you open to suggestions from sellers?
+question_advice: |
+  Describe how you would like to recieve the training. Indicate whether you are open to format suggestions from sellers.
+
+  Is this a one-off delivery or continued engagement?
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 100 words.'

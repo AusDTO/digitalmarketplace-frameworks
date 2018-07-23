@@ -1,0 +1,38 @@
+id: questionAndAnswerSessionDetails
+name: Will you have a question and answer session?
+question: Session information
+question_advice: |
+  For question and answer sessions please describe:  
+  
+  - the type of session, for example, a webinar, phone conference or meeting
+  - the date and time of the session
+
+  You could also include:  
+
+  - software needed
+  - the URL
+  - the phone number
+  - the access code
+  - the address (including postcode)
+  - anything else needed to take part
+
+  This information will only be available to eligible sellers who have logged in.
+
+  After the session, post all questions and answers to your requirements brief for all sellers to
+  see.
+
+optional: true
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_word_limit
+    message: 'Your question and answer session details must be no more than 200 words.'
+empty_message: Add details

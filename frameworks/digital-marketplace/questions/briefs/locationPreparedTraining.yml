@@ -1,0 +1,17 @@
+id: locationTrainingPrepared
+name: Where can the training be prepared?
+question: Preparation of training
+question_advice: |
+  Provide any information needed to help prepare the training. For example, can be prepared remotely.
+type: textbox_large
+optional: true
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 100 words.'
+

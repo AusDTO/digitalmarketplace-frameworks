@@ -1,0 +1,28 @@
+id: whatTraining
+name: What training do you need?
+question: ''
+question_advice: ''
+type: checkboxes
+options:
+  - label: Digital foundations
+    description: >
+       Understand how to be part of an agile, multidisciplinary team that delivers digital services for government.
+  - label: Agile delivery
+    description: >
+       Understand how to apply agile to your work area or work better with agile teams.
+  - label: User research
+    description: >
+       Learn how to plan, design and conduct research activities to gain a deep understanding of users.
+  - label: Content design
+    description: >
+       Understand how to design the end-to-end journey of a service using the design process, service mapping and other techniques.
+  - label: Other
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'
+empty_message: Describe the training needs

@@ -1,0 +1,22 @@
+id: ldsUserResearchProposalOrLds
+question: 'What the training needs to cover:'
+type: radios
+optional: true
+options:
+  -
+    label: Ask sellers to propose a training structure based on the User Research Learning Design Standard
+    value: sellerProposal
+  -
+    label: Select unit(s) from the Learning Design Standard
+    value: ldsUnits
+  -
+    label: Specify training needs
+    value: specify
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'

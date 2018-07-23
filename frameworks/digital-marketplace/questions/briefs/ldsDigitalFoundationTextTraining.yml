@@ -1,0 +1,9 @@
+id: ldsDigitalFoundationTrainingNeeds
+question: Describe what the training needs to cover
+type: textbox_large
+max_length_in_words: 500
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - training

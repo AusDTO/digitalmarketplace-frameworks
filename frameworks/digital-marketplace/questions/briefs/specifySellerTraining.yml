@@ -1,0 +1,15 @@
+name: Who can respond to your brief?
+question: ''
+question_advice: Only sellers approved to offer <a href="/search/sellers/?role=Training,%20Learning%20and%20Development&sort_by=a-z&view=sellers&user_role=buyer">training, learning and development</a> can respond.
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - training
+questions:
+  - specifySellerRadioTraining
+  - specifySellerListTraining
+  - specifySellerTextTraining
+
+empty_message: Set who can respond

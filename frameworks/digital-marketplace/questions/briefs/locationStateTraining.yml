@@ -1,0 +1,24 @@
+name: State or territory
+question: Location
+id: location
+question_advice: Select locations where the training can be done.
+type: checkboxes
+options:
+  - label: "Australian Capital Territory"
+  - label: "New South Wales"
+  - label: "Northern Territory"
+  - label: "Queensland"
+  - label: "South Australia"
+  - label: "Tasmania"
+  - label: "Victoria"
+  - label: "Western Australia"
+  - label: "Can be delivered remotely"
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one state to continue.'
+empty_message: Choose state or territory

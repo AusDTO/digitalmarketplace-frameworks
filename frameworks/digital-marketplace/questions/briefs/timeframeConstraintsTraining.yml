@@ -1,0 +1,16 @@
+id: timeframeConstraints
+name: Time constraints or deadlines
+question: Constraints or deadlines
+question_advice: |
+  For example, 'The material needs to be prepared onsite by 30 May and staff need to be fully trained by 10 June.'
+type: textbox_large
+max_length_in_words: 200
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 200 words.'

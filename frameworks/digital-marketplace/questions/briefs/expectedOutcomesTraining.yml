@@ -1,0 +1,15 @@
+question: What are the expected outcomes of the training?
+question_advice: |
+  Describe what you hope to achieve or learn from the training. 
+
+  Indicate whether you would like sellers' assistance in shaping the outcomes.
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 200 words.'

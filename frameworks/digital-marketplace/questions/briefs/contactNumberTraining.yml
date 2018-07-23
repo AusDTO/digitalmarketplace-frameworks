@@ -1,0 +1,20 @@
+id: contactNumber
+name: Contact number
+question: Contact number
+question_advice: |
+  This number will not be visible to sellers. It will only be used by the Marketplace operations team in case they need to contact you.
+
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your title needs to be 100 characters or less."
+empty_message: Add your best contact number

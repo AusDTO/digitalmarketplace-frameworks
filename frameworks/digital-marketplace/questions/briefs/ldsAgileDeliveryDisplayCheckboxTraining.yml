@@ -1,0 +1,28 @@
+id: ldsAgileDeliveryUnits
+question: 'Specific unit(s) from the Agile Delivery Learning Design Standard'
+type: checkboxes
+optional: true
+options:
+  - label: "Unit 1. Why Government needs agile delivery management"
+    description: >
+       Describe the context and articulate the user need, benefits and outcomes when using agile to create government products and services.
+  - label: "Unit 2. The agile mindset"
+    description: >
+       Develop an agile mindset.
+  - label: "Unit 3. Frameworks and practices of agile delivery"
+    description: >
+       Describe the frameworks, practices and artefacts used in agile delivery.
+  - label: "Unit 4. Tools and techniques used in agile delivery"
+    description: >
+       Describe the tools and techniques that are used in agile delivery.
+  - label: "Unit 5. Managing an agile delivery team"
+    description: >
+       Define the role of the delivery manager in managing an agile delivery team.
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'

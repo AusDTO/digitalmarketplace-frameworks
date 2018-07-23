@@ -1,0 +1,18 @@
+id: trainingApproach
+name: 'Preferred training method(s)'
+question: ''
+id: approachSelector
+type: radios
+options:
+  -
+    label: Open to receiving suggestions from sellers
+    value: open
+    description: >
+      Sellers can help define the best approach for you.
+  -
+    label: ''
+    value: ownPreference
+depends:
+  - "on": "lot"
+    being:
+      - training

@@ -1,0 +1,11 @@
+name: Payment approach
+question: ''
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - training
+questions:
+  - paymentApproachRadioTraining
+  - paymentApproachAdditionalInformationTraining
+empty_message: Choose payment approach

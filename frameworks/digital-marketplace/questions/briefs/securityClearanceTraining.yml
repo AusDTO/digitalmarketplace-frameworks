@@ -1,0 +1,18 @@
+id: securityClearance
+name: Security clearance
+question: Security clearance
+question_advice: |
+  Only request security clearance if access to classified material, environments or assets is required. 
+    
+type: text
+optional: true
+hint: 100 characters maximum
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_character_limit
+    message: "Your security clearance must be no more than 100 characters."
+empty_message: Describe if security clearance is required

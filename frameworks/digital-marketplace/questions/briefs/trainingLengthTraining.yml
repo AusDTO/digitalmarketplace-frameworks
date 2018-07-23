@@ -1,0 +1,16 @@
+id: trainingLength
+name: Training length
+question: Training length
+type: multiquestion
+questions:
+  - trainingLengthTextTraining
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'
+
+empty_message: Specify training length

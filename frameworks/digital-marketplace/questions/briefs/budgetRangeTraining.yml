@@ -1,0 +1,10 @@
+name: What is your budget range?
+question: ''
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - training
+questions:
+  - budgetRangeTextTraining
+empty_message: Set budget range

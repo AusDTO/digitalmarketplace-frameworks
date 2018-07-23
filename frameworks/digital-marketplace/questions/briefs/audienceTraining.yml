@@ -1,0 +1,21 @@
+id: audience
+name: Who is the training for?
+question: Description of audience
+question_advice: |
+  State who in your organisation requires the training. Include the number of people, their current capabilities and any accessibility needs.
+
+  For example, 'There are 8 graduates with no previous training and 1 participant uses a screen reader.'
+  
+  
+optional: false
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 200 words.'
+empty_message: Describe the audience for the training

@@ -46,6 +46,9 @@ SCHEMAS = {
 
         ('Digital Outcome Brief',
          'digital-marketplace', 'digital-outcome'),
+
+        ('Training',
+         'digital-marketplace', 'training'),
     ],
     'brief-responses': [
         ('Digital Service Professionals Brief Response',
@@ -469,6 +472,7 @@ def add_multiquestion_dependencies(schema, questions):
 def add_section(section):
     return {
         'name': section['name'],
+        'editable': section['editable'],
         'optional': [optional for question in section['questions']
                      for optional in question['_optional_form_fields']],
         'required': [required for question in section['questions']

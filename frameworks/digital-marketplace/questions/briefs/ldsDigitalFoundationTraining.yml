@@ -1,0 +1,20 @@
+id: ldsDigitalFoundation
+name: Digital foundations
+question: Digital foundations
+question_advice: |
+  Download the <a href="/static/media/documents/digital-foundations-lds-units.pdf">Digital Foundation Learning Design Standard (PDF 191KB)</a> to clarify your needs.
+type: multiquestion
+questions:
+  - ldsDigitalFoundationRadioTraining
+  - ldsDigitalFoundationCheckboxTraining
+  - ldsDigitalFoundationTextTraining
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'
+
+empty_message: Describe what you need the training to cover

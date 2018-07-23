@@ -894,6 +894,7 @@
   ],
   "sections": [
     {
+      "editable": true,
       "name": "Service essentials",
       "optional": [],
       "required": [
@@ -904,6 +905,7 @@
       ]
     },
     {
+      "editable": false,
       "name": "Individual specialist roles",
       "optional": [
         "agileCoachLocations",

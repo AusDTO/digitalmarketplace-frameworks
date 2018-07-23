@@ -1,0 +1,19 @@
+id: summary
+name: Write a summary of your brief
+question: Summary
+question_advice: |
+  This will appear at the beginning of the brief. It helps sellers decide whether or not to view your brief in full.
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 200 words.'
+empty_message: Provide a summary of the work

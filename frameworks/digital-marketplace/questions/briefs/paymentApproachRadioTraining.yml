@@ -1,0 +1,19 @@
+name: ''
+question: 'What is your preferred payment approach?'
+id: paymentApproach
+question_advice: You should choose the approach that best fits the way you work and provides the best value for money.
+type: radios
+options:
+  -
+    label: Fixed price
+    value: fixedPrice
+  -
+    label: Time and materials
+    value: timeMaterials
+  -
+    label: Capped time and materials
+    value: cappedTimeMaterials
+depends:
+  - "on": "lot"
+    being:
+      - training

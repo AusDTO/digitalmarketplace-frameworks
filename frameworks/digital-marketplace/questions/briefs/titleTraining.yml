@@ -1,0 +1,22 @@
+id: title
+name: Create a title for your brief
+question: Title
+question_advice: |
+  Describe the training you need, for example, ‘Agile coaching’.
+
+  You can update your title later if needed.
+
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your title needs to be 100 characters or less."
+empty_message: Add title

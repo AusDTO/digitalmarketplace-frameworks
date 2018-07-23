@@ -1,0 +1,15 @@
+question: Define your own training
+question_advice: |
+  Describe what skills you would like to build and the training you would like to receive.
+
+  Indicate whether you have any existing training materials you would like sellers to use or consider. You can attach these materials as part of your brief.
+type: textbox_large
+max_length_in_words: 500
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 500 words.'

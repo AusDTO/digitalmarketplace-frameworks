@@ -1,0 +1,12 @@
+name: Commencement date
+question: ''
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - training
+questions:
+  - startDateTraining
+  - timeframeConstraintsTraining
+
+empty_message: Add timeframes

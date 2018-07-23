@@ -1,0 +1,20 @@
+id: requirementsLength
+name: How long will your brief be open?
+question: ''
+type: radios
+options:
+  - label: "1 week"
+  - label: "2 weeks"
+    description: >
+      For best results, we recommend allowing 2 weeks for sellers to put together proposals.
+
+depends:
+  - "on": lot
+    being:
+      - training
+
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Set requirements length

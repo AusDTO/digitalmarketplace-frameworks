@@ -1,0 +1,26 @@
+id: sellerEmail
+name: ''
+question: 'Enter seller email address'
+question_advice: ''
+type: text
+limits:
+  format: email
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: 'Criteria must be no more than 300 characters.'
+  -
+    name: under_word_limit
+    message: "You must enter a valid email address."
+  -
+    name: email_not_found
+    message: "Seller is not registered in the marketplace"
+empty_message: 'Enter seller email address'

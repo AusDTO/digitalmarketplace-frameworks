@@ -1,0 +1,18 @@
+id: locationCityOrRegion
+name: Location of training
+question: City or region
+question_advice: |
+  You can add more than one location, for example 'Sydney, Canberra.' If delivered remotely, leave this field blank.
+  
+type: text
+hint: 100 characters maximum
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_character_limit
+    message: "Your start date must be no more than 100 characters."
+empty_message: Set city or region

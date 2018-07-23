@@ -72,4 +72,50 @@
     - evaluationTypeParticipants
     - weightingOutcomes
     - weightingSpecialists
-    - weightingParticipants
+    
+-
+  name: Overview
+  questions: 
+    - summaryDisplayTraining
+    - startDateTraining
+    - timeframeConstraintsTraining
+    - locationCityOrRegionTraining
+    - locationStateTraining
+    - budgetRangeTextTraining
+
+-
+  name: Description of training
+  summary_page_description: You can refer to the Learning Design Standard (https://govau.github.io/learning-design-standards/) to help structure your training.
+  questions:
+    - trainingDetailDisplayTraining
+    - ldsDigitalFoundationDisplayTraining
+    - ldsAgileDeliveryDisplayTraining
+    - ldsUserResearchDisplayTraining
+    - ldsContentDesignDisplayTraining
+    - whyTraining
+    - audienceTraining
+    - trainingLengthTextTraining
+    - approachDisplayTraining
+
+-
+  name: Additional info
+  questions:
+    - securityClearanceDisplayTraining
+    - paymentApproachDisplayTraining
+    - contractLengthTraining
+    - intellectualPropertyTraining
+    - additionalTermsTraining
+
+-
+  name: Evaluations
+  questions:
+    - numberOfSuppliersTraining
+    - weightingTraining
+    - technicalCompetenceCriteriaTraining
+    - culturalFitCriteriaTraining
+
+-
+  name: Assessment methods
+  questions:
+    - evaluationTypeSellerSubmissionsTraining
+    - evaluationTypeSellerRequestsDisplayTraining

@@ -1,0 +1,17 @@
+id: trainingDetail
+name: ''
+question: Training topic
+type: multiquestion
+questions:
+  - trainingDetailTypeTraining
+  - trainingDetailCoverTraining
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'
+
+empty_message: Specify training detail

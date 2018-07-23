@@ -1,0 +1,20 @@
+id: organisation
+name: Which organisation is requesting training?
+question: Organisation
+question_advice: |
+  Please write in full, for example, ‘Digital Transformation Agency’ instead of ‘DTA’.
+  
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "The organisation name must be no more than 100 characters."
+empty_message: Add organisation

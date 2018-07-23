@@ -183,3 +183,101 @@
   step: 3
   questions:
     - specifySeller
+
+# training related
+-
+  name: Title
+  editable: True
+  step: 1
+  questions:
+    - titleTraining
+
+-
+  name: Organisation
+  editable: True
+  step: 2
+  questions:
+    - organisationTraining
+
+-
+  name: Description of training
+  editable: True
+  step: 3
+  questions:
+    - whatTraining
+    - ldsDigitalFoundationTraining
+    - ldsAgileDeliveryTraining
+    - ldsUserResearchTraining
+    - ldsContentDesignTraining
+    - trainingDetailTraining
+    - whyTraining
+    - audienceTraining
+    - trainingLengthTraining
+    - approachTraining
+
+-
+  name: Approach to market
+  editable: True
+  step: 4
+  questions:
+    - requirementsLengthTraining
+    - specifySellerTraining
+    - contactNumberTraining
+  
+
+-
+  name: Timeframes, location and budget
+  editable: True
+  step: 5
+  questions:
+    - timeframesTraining
+    - locationCityOrRegionTraining
+    - locationStateTraining
+    - budgetRangeTextTraining
+    - paymentApproachTraining
+
+-
+  name: Additional information
+  editable: True
+  step: 6
+  questions:
+    - securityClearanceTraining
+    - contractLengthTraining
+    - intellectualPropertyTraining
+    - additionalTermsTraining
+
+-
+  name: Evaluate responses
+  editable: True
+  step: 7
+  questions:
+    - numberOfSuppliersTraining
+    - weightingTraining
+    - technicalCompetenceCriteriaTraining
+    - culturalFitCriteriaTraining
+    - evaluationTypeTraining
+
+-
+  name: Summary
+  editable: True
+  step: 8
+  questions:
+    - summaryTraining
+
+-
+  name: Question and answer session details
+  editable: True
+  step: 9
+  description: |
+    While the brief is open, you'll need to answer all questions sellers ask, by posting them on your brief. You'll also receive an email from the Marketplace with further information.
+
+    Question and answer sessions can be by phone or video call. This gives buyers and sellers the opportunity to understand each other's needs.
+  questions:
+    - questionAndAnswerSessionDetailsTraining
+
+-
+  name: Not Editable
+  editable: False
+  step: 10
+  questions:
+    - evaluationTypeSellerSubmissionsTraining

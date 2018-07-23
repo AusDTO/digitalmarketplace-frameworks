@@ -1,0 +1,10 @@
+question: ''
+id: paymentApproachAdditionalInformation
+question_advice: |
+  For example, this includes milestone payments of 30% upfront, 30% midway and 40% after training is completed.
+type: text
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - training

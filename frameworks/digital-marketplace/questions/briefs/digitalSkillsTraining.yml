@@ -1,0 +1,22 @@
+id: digitalSkills
+name: 'Which units of the LDS would you like the training to cover?'
+question: 'Which units of the LDS would you like the training to cover?'
+question_advice: ''
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - training
+questions:
+  - digitalFoundationDigitalSkillsTraining
+  - productManagementDigitalSkillsTraining
+  - userResearchDigitalSkillsTraining
+  - serviceDesignDigitalSkillsTraining
+  - contentDesignDigitalSkillsTraining
+  - deliveryManagementDigitalSkillsTraining
+  - digitalPerformanceAnalysisDigitalSkillsTraining
+  - cloudServiceManagementDigitalSkillsTraining
+  - cyberSecurityDigitalSkillsTraining
+
+empty_message: Set LDS units

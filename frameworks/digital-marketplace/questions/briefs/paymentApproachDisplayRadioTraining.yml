@@ -1,0 +1,18 @@
+name: 'Preferred payment approach'
+question: ''
+id: paymentApproach
+type: radios
+options:
+  -
+    label: Fixed price
+    value: fixedPrice
+  -
+    label: Time and materials
+    value: timeMaterials
+  -
+    label: Capped time and materials
+    value: cappedTimeMaterials
+depends:
+  - "on": "lot"
+    being:
+      - training

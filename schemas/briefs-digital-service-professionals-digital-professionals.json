@@ -229,6 +229,7 @@
   ],
   "sections": [
     {
+      "editable": true,
       "name": "Title",
       "optional": [],
       "required": [
@@ -236,6 +237,7 @@
       ]
     },
     {
+      "editable": true,
       "name": "Specialist role",
       "optional": [],
       "required": [
@@ -243,6 +245,7 @@
       ]
     },
     {
+      "editable": true,
       "name": "Location",
       "optional": [],
       "required": [
@@ -250,6 +253,7 @@
       ]
     },
     {
+      "editable": true,
       "name": "Description of work",
       "optional": [
         "additionalRelevantInformation",
@@ -269,6 +273,7 @@
       ]
     },
     {
+      "editable": true,
       "name": "Shortlist and evaluation process",
       "optional": [
         "niceToHaveRequirements",
@@ -284,6 +289,7 @@
       ]
     },
     {
+      "editable": true,
       "name": "How long your brief will be open",
       "optional": [],
       "required": [
@@ -291,6 +297,7 @@
       ]
     },
     {
+      "editable": true,
       "name": "Question and answer session details",
       "optional": [
         "questionAndAnswerSessionDetails"
@@ -298,6 +305,7 @@
       "required": []
     },
     {
+      "editable": true,
       "name": "Who can respond",
       "optional": [
         "sellerEmailList",

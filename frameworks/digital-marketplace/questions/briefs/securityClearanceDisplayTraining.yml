@@ -1,0 +1,14 @@
+id: securityClearance
+question: Security clearance
+type: text
+optional: true
+hint: 100 characters maximum
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: under_character_limit
+    message: "Your security clearance must be no more than 100 characters."
+empty_message: Describe if security clearance is required

@@ -1,0 +1,16 @@
+id: summary
+question: Summary of brief
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_word_limit
+    message: 'Your answer must be no more than 200 words.'
+empty_message: Provide a summary of the work

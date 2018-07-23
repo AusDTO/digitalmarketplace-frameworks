@@ -1,0 +1,13 @@
+name: Technical competence criteria
+question: ''
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - training
+questions:
+  - essentialRequirementsTraining
+  - niceToHaveRequirementsTraining
+
+empty_message: Add criteria for technical competence

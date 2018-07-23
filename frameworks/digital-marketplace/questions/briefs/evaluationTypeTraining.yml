@@ -1,0 +1,17 @@
+id: evaluationType
+question: Assessment methods
+name: Assessment methods
+type: multiquestion
+questions:
+  - evaluationTypeSellerRequestsTraining
+question_advice: |
+  **Step 1: What the sellers will submit through the Marketplace:**
+
+  - Written proposal
+  - Project costs
+  - Trainer résumés
+depends:
+  - "on": "lot"
+    being:
+      - training
+empty_message: Select assessment methods

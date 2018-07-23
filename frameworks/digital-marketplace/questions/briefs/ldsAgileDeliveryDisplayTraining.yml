@@ -1,0 +1,18 @@
+id: ldsAgileDelivery
+name: Agile delivery
+question: Agile delivery
+type: multiquestion
+questions:
+  - ldsAgileDeliveryDisplayRadioTraining
+  - ldsAgileDeliveryDisplayCheckboxTraining
+  - ldsAgileDeliveryDisplayTextTraining
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'
+
+empty_message: Describe what you need the training to cover

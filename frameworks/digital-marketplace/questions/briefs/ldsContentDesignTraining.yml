@@ -1,0 +1,20 @@
+id: ldsContentDesign
+name: Content design
+question: Content design
+question_advice: |
+  Download the <a href="/static/media/documents/content-design-lds-units.pdf">Content Design Learning Design Standard (PDF 188KB)</a> to clarify your needs.
+type: multiquestion
+questions:
+  - ldsContentDesignRadioTraining
+  - ldsContentDesignCheckboxTraining
+  - ldsContentDesignTextTraining
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'
+
+empty_message: Describe what you need the training to cover

@@ -440,6 +440,7 @@ def test_generate_dsp_brief_opens_files(opened_files, tmpdir):
 
 section_to_add = {
     'name': 'Description of work',
+    'editable': True,
     'questions': [{
         '_optional_form_fields': ['securityClearance'],
         'required_form_fields': ['organisation', 'phase']
@@ -467,6 +468,7 @@ def test_add_sections():
     add_sections(schema, [section_to_add])
     assert schema['sections'] == [{
         'name': 'Description of work',
+        'editable': True,
         'optional': ['securityClearance'],
         'required': ['organisation', 'phase']
     }]

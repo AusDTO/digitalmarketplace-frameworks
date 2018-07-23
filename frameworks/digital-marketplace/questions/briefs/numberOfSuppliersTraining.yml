@@ -1,0 +1,21 @@
+id: numberOfSuppliers
+name: How many sellers will be evaluated?
+question: Number of sellers
+question_advice: We recommend you evaluate at least 3 sellers.
+type: number
+limits:
+  integer_only: true
+  min_value: 1
+  max_value: 15
+
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'Enter a number between 3 and 15 to continue.'
+
+empty_message: Add how many sellers you will evaluate

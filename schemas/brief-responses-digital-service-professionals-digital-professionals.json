@@ -54,6 +54,7 @@
   ],
   "sections": [
     {
+      "editable": true,
       "name": "Apply for this opportunity",
       "optional": [
         "niceToHaveRequirements"

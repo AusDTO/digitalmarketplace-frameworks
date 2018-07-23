@@ -1,0 +1,27 @@
+name: ''
+id: sellerEmailList
+question: 'Enter seller email addresses'
+question_advice: ''
+list_item_name: 'seller list'
+number_of_items: 15
+type: list
+limits:
+  format: email
+optional: true
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: 'Criteria must be no more than 300 characters.'
+  -
+    name: invalid_format
+    message: "You must enter valid email addresses."
+  -
+    name: email_not_found
+    message: "One or more sellers is not registered in the marketplace."
+depends:
+  - "on": "lot"
+    being:
+      - training

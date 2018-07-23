@@ -1,0 +1,19 @@
+id: ldsContentDesignUnits
+question: 'Select unit(s)'
+type: checkboxes
+optional: true
+options:
+  - label: "Unit 1: Introduction to content design​"
+    description: >
+       Explain the principles associated with good content design.
+  - label: "Unit 2: Content design process​"
+    description: >
+       To apply the processes of content design.
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'

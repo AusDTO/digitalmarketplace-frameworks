@@ -1,0 +1,31 @@
+id: ldsUserResearchUnits
+type: checkboxes
+question: 'Specific unit(s) from the User Research Learning Design Standard'
+optional: true
+options:
+  - label: "Unit 1. The role of user research in the digital service design context"
+    description: >
+       Describe the context and processes of user research
+  - label: "Unit 2. User research protocols and governance"
+    description: >
+       Foundational methods for practicing design research.
+  - label: "Unit 3. User research in the different design and delivery phases"
+    description: >
+       Executing user research throughout the development phase
+  - label: "Unit 4. Methods and tools of user research"
+    description: >
+       Applying common methods and tools.
+  - label: "Unit 5. Conducting user research"
+    description: >
+       Performing user research using appropriate methods in the service design context.
+  - label: "Unit 6. Analysing and presenting user research findings"
+    description: >
+       Sharing user research needs to decision makers and stakeholders.
+depends:
+  - "on": "lot"
+    being:
+      - training
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one to continue.'

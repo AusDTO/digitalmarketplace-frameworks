@@ -102,8 +102,8 @@ def test_text_property_format(id_name):
     result = text_property({"id": id_name, "limits": {"format": "email"}})
     assert result == {
         id_name: {
-            "type": "string", 
-            "format": "email", 
+            "type": "string",
+            "format": "email",
             "minLength": 1,
             "pattern": EMAIL_PATTERN
         }

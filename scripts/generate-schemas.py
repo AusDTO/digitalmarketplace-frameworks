@@ -6,7 +6,7 @@ Usage:
 
 """
 import sys
-sys.path.insert(0, '.')
+sys.path.insert(0, '.')  # noqa
 
 from docopt import docopt
 from schema_generator import generate_schema, SCHEMAS

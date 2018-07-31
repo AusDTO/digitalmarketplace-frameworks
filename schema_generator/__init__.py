@@ -332,14 +332,14 @@ def parse_question_limits(question, for_items=False):
     limits = {}
     word_length_validator = next(
         iter(filter(None, (
-            re.match('under_(\d+)_words', validator['name'])
+            re.match(r'under_(\d+)_words', validator['name'])
             for validator in question.get('validations', [])
         ))),
         None
     )
     char_length_validator = next(
         iter(filter(None, (
-            re.search('(\d+)', validator['message'])
+            re.search(r'(\d+)', validator['message'])
             for validator in question.get('validations', [])
             if validator['name'] == 'under_character_limit'
         ))),

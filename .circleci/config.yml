@@ -1,0 +1,38 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:2.7.15-stretch
+        environment:
+          TZ: "/usr/share/zoneinfo/Australia/Sydney"
+    steps:
+      - checkout
+      - restore_cache:
+          key: venv-cache-{{ .Branch }}-{{ checksum "requirements.txt" }}-{{ checksum "requirements_for_test.txt" }}
+      - run: 
+          name: Pip Install
+          command: |
+            virtualenv venv
+            source venv/bin/activate
+            pip install -r requirements_for_test.txt
+      - save_cache:
+          key: venv-cache-{{ .Branch }}-{{ checksum "requirements.txt" }}-{{ checksum "requirements_for_test.txt" }}
+          paths:
+            - venv
+      - run: 
+          name: Check Styles
+          command: |
+            source venv/bin/activate
+            pycodestyle
+      - run: 
+          name: Run Tests
+          command: |
+            source venv/bin/activate
+            py.test
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+

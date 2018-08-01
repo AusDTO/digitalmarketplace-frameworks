@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: venv-cache-{{ .Branch }}-{{ checksum "requirements.txt" }}-{{ checksum "requirements_for_test.txt" }}
+          key: venv-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements_for_test.txt" }}
       - run: 
           name: Pip Install
           command: |
@@ -16,7 +16,7 @@ jobs:
             source venv/bin/activate
             pip install -r requirements_for_test.txt
       - save_cache:
-          key: venv-cache-{{ .Branch }}-{{ checksum "requirements.txt" }}-{{ checksum "requirements_for_test.txt" }}
+          key: venv-cache-{{ checksum "requirements.txt" }}-{{ checksum "requirements_for_test.txt" }}
           paths:
             - venv
       - run: 

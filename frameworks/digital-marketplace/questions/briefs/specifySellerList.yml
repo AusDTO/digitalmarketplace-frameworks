@@ -20,7 +20,7 @@ validations:
     message: "You must enter valid email addresses."
   -
     name: email_not_found
-    message: "One or more sellers is not registered in the marketplace."
+    message: "is not a registered user. Please contact us."
 depends:
   - "on": "lot"
     being:

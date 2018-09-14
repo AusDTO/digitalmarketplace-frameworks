@@ -22,5 +22,5 @@ validations:
     message: "You must enter a valid email address."
   -
     name: email_not_found
-    message: "Seller is not registered in the marketplace"
+    message: "is not a registered user. Please contact us."
 empty_message: 'Enter seller email address'

@@ -20,7 +20,7 @@ validations:
     message: "You must enter valid email addresses."
   -
     name: email_not_found
-    message: "is not a registered user. Please contact us."
+    message: "is not registered or approved for the area of expertise selected. Email us at marketplace@digital.gov.au for assistance."
 depends:
   - "on": "lot"
     being:

@@ -23,5 +23,5 @@ validations:
     message: "You must enter a valid email address."
   -
     name: email_not_found
-    message: "is not a registered user. Please contact us."
+    message: "is not registered or approved for the area of expertise selected. Email us at marketplace@digital.gov.au for assistance."
 empty_message: 'Enter seller email address'

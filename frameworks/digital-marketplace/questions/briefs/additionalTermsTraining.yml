@@ -2,7 +2,9 @@ id: additionalTerms
 name: Additional terms and conditions
 question: Additional terms and conditions
 question_advice: |
-  All sellers have agreed to the terms and conditions in the [Master Agreement](https://marketplace.service.gov.au/static/media/documents/digital-marketplace-master-agreement.pdf).
+  From 1 July 2019 the Digital Marketplace will operate on an updated Master Agreement. You may choose to apply this new agreement to opportunities you publish from today, but the contract must be signed after 1 July 2019.  
+    
+  To apply the new Master Agreement for this opportunity, you must include this sentence: 'This opportunity will be subject to the terms and conditions of the new Master Agreement that takes effect from 1 July 2019. More information can be found at [https://marketplace.service.gov.au/2/r/master-agreement-2019-07-01.pdf](https://marketplace.service.gov.au/2/r/master-agreement-2019-07-01.pdf)'.  
 
 optional: true
 type: textbox_large
